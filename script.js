@@ -24,6 +24,7 @@ const key = String.fromCharCode(e.keycode)
 if (e.target.value.length === 8) {
   searchResults(e.target.value)
   e.preventDefault();
+  return;
 }
 
 if (!onlyNumbers.includes(e.keycode)) {
